@@ -1,0 +1,124 @@
+form,
+.form {
+  width: 80%;
+  margin: 1rem auto;
+  padding-bottom: 0.5rem;
+
+  .item-group {
+    width: 100%;
+    margin: 1.5rem 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .form-item {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+
+    &.form-item-long {
+      width: 100%;
+    }
+
+    label,
+    .label {
+      display: block;
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+      font-weight: 500;
+      color: #bbb;
+    }
+
+    input {
+      width: 100%;
+      outline: none;
+      border-radius: 5px;
+      padding: 0.5rem 1rem;
+      font-size: 1.2rem;
+      background-color: transparent;
+
+      border: 1px solid rgba(#888, 0.4);
+      color: #bbb;
+
+      &:-webkit-autofill {
+        border: 1px solid rgba(#888, 0.2);
+        box-shadow: 0 0 0px 1000px #242424 inset;
+        -webkit-text-fill-color: #bbb;
+      }
+    }
+
+    .radio-grp {
+      border-radius: 5px;
+      overflow: hidden;
+      width: fit-content;
+
+      input {
+        display: none;
+      }
+
+      button {
+        border: none;
+        outline: none;
+        padding: 0.7rem 0.2rem 0.5rem 0.2rem;
+        font-size: 1.2rem;
+
+        background-color: rgba(#f49d1a, 0.2);
+        color: rgba(#f49d1a, 0.9);
+        &[data-checked='true'] {
+          background-color: rgba(#f49d1a, 0.4);
+          font-weight: 600;
+        }
+
+        &::before {
+          display: block;
+          content: attr(title);
+          height: 0;
+          padding: 0 1rem;
+          font-size: 1.1rem;
+          font-weight: 600;
+          overflow: hidden;
+          visibility: hidden;
+        }
+      }
+    }
+  }
+
+  .submit {
+    display: block;
+    margin: 2rem auto;
+    outline: none;
+    border: none;
+    padding: 0.7rem 1.2rem 0.4rem 1.2rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 5%);
+    display: flex;
+    align-items: center;
+
+    svg {
+      margin-left: 1rem;
+      margin-bottom: 0.4rem;
+      animation: loading-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    }
+
+    background-color: rgba(#f49d1a, 0.2);
+    color: rgba(#f49d1a, 1);
+
+    &:disabled {
+      background-color: rgba(#f49d1a, 0.1);
+      color: rgba(#f49d1a, 0.5);
+      box-shadow: none;
+    }
+  }
+}
+
+@keyframes loading-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

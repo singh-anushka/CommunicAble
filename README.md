@@ -1,0 +1,4 @@
+# CommunicAble
+
+Braille is a crucial and lively form of communication, education, and community building for blind or visually impaired people. The direct attention kids require to achieve correctness and fluency in Braille is frequently challenging to deliver with a limited number of teachers skilled in Braille. More tools must be needed to make learning Braille as easy as learning print.
+Also, it becomes a much more difficult challenge for people with vision and hearing disabilities. This project can be a tiny portable gadget, allowing them to communicate. Here, only the software part is covered. But by putting their hand on the Braille display, a deaf-blind person can read the written text, too. Here's a web application that converts Voice to Text and Text to Braille. This covers the hardware part of a working prototype.

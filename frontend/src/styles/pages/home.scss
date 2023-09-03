@@ -1,0 +1,24 @@
+.home {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .title {
+    font-size: 5rem;
+    margin-bottom: 5rem;
+    font-family: 'Fredoka One', sans-serif;
+    color: rgba(#f49d1a, 0.7);
+    filter: drop-shadow(4px 8px 10px rgba(#f49d1a, 0.3));
+  }
+
+  .subtitle {
+    font-size: 1.3rem;
+    color: #999;
+    margin-bottom: 0.8rem;
+  }
+}

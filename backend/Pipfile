@@ -1,0 +1,25 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+fastapi = "0.88.0"
+uvicorn = {extras = ["standard"], version = "*"}
+requests = "*"
+pdf2image = "*"
+pypdf2 = "*"
+matplotlib = "*"
+tika = "*"
+numpy = "*"
+opencv-python = "*"
+keras = "*"
+tensorflow = "*"
+speechrecognition = "*"
+pocketsphinx = "*"
+pybraille = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.10"
